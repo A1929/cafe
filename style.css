@@ -1,0 +1,125 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--googleText: 'Sacramento', cursive;
+--mainBurgendy: rgb(120, 0, 1);
+--mainGrey: #e5e5e5;
+--mainTransition: all 0.3s ease-in-out;
+}
+text{
+    color:#0B0203;
+}
+body {
+    font-family: 'Merriweather', serif;
+    line-height: 1.5;
+}
+.navbar{
+    position: fixed;
+    z-index: 1;
+    font-family: var(--googleText);
+    font-weight: bold;
+}
+.navbar ul{
+    display: flex;
+    text-align: center;
+   
+}
+.nav-item li{
+    list-style-type: none;   
+    margin: 0 auto;
+    min-width: 25vw;
+}
+.nav-item a{
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    color:var(--mainBurgendy);
+    margin-left: 10px;
+    padding: 40px 25px;
+   font-size: 2.5rem;
+   letter-spacing: 5px;
+   color:white;
+}
+.navbar a:hover{
+    font-size:3rem;
+}
+
+.banner{
+    height: calc(100vh - 40px);
+    width: 100vw;
+    background:
+    url(images/cafe-main.jpeg) center/cover no-repeat fixed;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(120, 0, 1);
+}
+.banner-brand{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    font-size: 5rem;
+}
+
+.banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: fromTop 10s ease-out infinite; 
+}
+
+
+@keyframes fromTop {
+    0%{
+        transform: translateY(-1000px);
+    }
+    50%{
+        transform: translateY(300px);
+    }
+    75%{
+        transform: translateY(-100px);
+        transform: scale(3);
+    }
+    90%{
+        transform: translateY(0);
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+} 
+.main-content{
+    margin-top:7rem;
+    margin-bottom: 7rem;
+}
+.contact{
+    width: 100vw;
+    background-color: rgba(163, 124, 99,0.3);
+    text-align: center;  
+}
+
+
+.contact-content{
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-family: 'Merriweather', serif;
+    padding: 2rem;
+}
+.contact-title{
+   letter-spacing: 1rem;
+    padding-top: 3rem;
+    font-family: var(--googleText);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+
+
+
